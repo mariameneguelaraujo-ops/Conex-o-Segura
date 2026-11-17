@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --azul: #182343;
+    --azul-claro: #29375D;
+    --lilas: #A996E8;
+    --lilas-claro: #F0ECFA;
+    --branco: #FFFFFF;
+    --fundo: #FAF9FD;
+    --texto: #51536A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--azul);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+}
+
+.topo {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 9%;
+    background: var(--branco);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--azul);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.marca-icone {
+    color: var(--lilas);
+    font-size: 30px;
+}
+
+.destaque {
+    color: #9279D8;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--texto);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #9279D8;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 35px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 40px;
+    padding: 100px 0;
+}
+
+.etiqueta {
+    color: #907ACD;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.15;
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #9B87DC;
+}
+
+.hero-texto p {
+    color: var(--texto);
+    max-width: 490px;
+    margin-bottom: 30px;
+}
+
+.botao-principal {
+    display: inline-block;
+    background: var(--azul);
+    color: white;
+    padding: 14px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.botao-principal:hover {
+    background: #514078;
+    transform: translateY(-2px);
+}
+
+.hero-visual {
+    text-align: center;
+}
+
+.circulo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #E5DDF9, #F5F1FC);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+}
+
+.escudo {
+    width: 115px;
+    height: 135px;
+    background: var(--azul);
+    color: white;
+    clip-path: polygon(50% 0, 95% 18%, 85% 72%, 50% 100%, 15% 72%, 5% 18%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.estrela {
+    position: absolute;
+    color: #9279D8;
+    font-size: 30px;
+}
+
+.estrela-1 {
+    top: 35px;
+    left: 40px;
+}
+
+.estrela-2 {
+    bottom: 40px;
+    right: 25px;
+}
+
+.estrela-3 {
+    top: 90px;
+    right: 15px;
+}
+
+.hero-visual p {
+    color: var(--texto);
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.introducao {
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto 45px;
+}
+
+.introducao h2 {
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.introducao p {
+    color: var(--texto);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #EEEAF6;
+    padding: 28px;
+    border-radius: 14px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #29204A12;
+}
+
+.card-icone {
+    background: var(--lilas-claro);
+    color: #806BC0;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.numero {
+    font-size: 10px;
+    color: #9279D8;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--texto);
+    margin-bottom: 20px;
+}
+
+.dica {
+    display: block;
+    padding-top: 14px;
+    border-top: 1px solid #EEEAF6;
+    color: #7964B5;
+    font-size: 12px;
+}
+
+.lembrete {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin: 65px 0;
+    padding: 35px;
+    border-radius: 14px;
+    background: var(--lilas-claro);
+}
+
+.lembrete-icone {
+    font-size: 45px;
+    color: #907ACD;
+}
+
+.lembrete h2 {
+    font-size: 25px;
+}
+
+.lembrete p {
+    color: var(--texto);
+    font-size: 14px;
+}
+
+.final {
+    text-align: center;
+    padding: 35px 0 75px;
+}
+
+.final h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.final p {
+    color: var(--texto);
+    max-width: 550px;
+    margin: auto;
+}
+
+.acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    gap: 8px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #EEEAF6;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #18234318;
+}
+
+.acessibilidade button {
+    border: none;
+    background: var(--lilas-claro);
+    color: var(--azul);
+    padding: 10px 13px;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.acessibilidade button:hover {
+    background: #DCD2F5;
+}
+
+.acessibilidade button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #9279D8;
+    outline-offset: 3px;
+}
+
+footer {
+    background: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    font-size: 13px;
+}
+
+footer span {
+    display: block;
+    color: #C9C5D9;
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+@media (max-width: 760px) {
+
+    .topo {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    .hero-texto p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .circulo {
+        width: 220px;
+        height: 220px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .introducao h2 {
+        font-size: 27px;
+    }
+
+    .lembrete {
+        padding: 22px;
+    }
+
+    .acessibilidade {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        justify-content: center;
+    }
+
+    .acessibilidade button {
+        flex: 1;
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding-bottom: 85px;
+    }
+}
